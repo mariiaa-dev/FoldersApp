@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoldersApp", "FoldersApp\FoldersApp.csproj", "{C2C2433C-569E-427F-9B63-8D7A2C606831}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{55C70B4D-3245-4301-B435-AEE01A07B897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{1F3797C7-C705-41ED-8732-D7B05D7E8030}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistance", "Persistance", "{9E0F32B7-8C96-4BF6-9233-30F2BFBB5C38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoldersApp.Persistance", "FoldersApp.Persistance\FoldersApp.Persistance.csproj", "{8F7F0174-0691-42C1-9382-44B49EC64D4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoldersApp.Application", "FoldersApp.Application\FoldersApp.Application.csproj", "{2E5F5BB2-0E3B-423B-B6FF-F76E2EB6D273}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoldersApp.DbSerializator", "Serializator\FoldersApp.DbSerializator.csproj", "{C558B89E-329A-474B-A785-17419462363A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2C2433C-569E-427F-9B63-8D7A2C606831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C2433C-569E-427F-9B63-8D7A2C606831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C2433C-569E-427F-9B63-8D7A2C606831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C2433C-569E-427F-9B63-8D7A2C606831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F7F0174-0691-42C1-9382-44B49EC64D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7F0174-0691-42C1-9382-44B49EC64D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7F0174-0691-42C1-9382-44B49EC64D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7F0174-0691-42C1-9382-44B49EC64D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5F5BB2-0E3B-423B-B6FF-F76E2EB6D273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5F5BB2-0E3B-423B-B6FF-F76E2EB6D273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5F5BB2-0E3B-423B-B6FF-F76E2EB6D273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5F5BB2-0E3B-423B-B6FF-F76E2EB6D273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C558B89E-329A-474B-A785-17419462363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C558B89E-329A-474B-A785-17419462363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C558B89E-329A-474B-A785-17419462363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C558B89E-329A-474B-A785-17419462363A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2C2433C-569E-427F-9B63-8D7A2C606831} = {55C70B4D-3245-4301-B435-AEE01A07B897}
+		{8F7F0174-0691-42C1-9382-44B49EC64D4E} = {9E0F32B7-8C96-4BF6-9233-30F2BFBB5C38}
+		{2E5F5BB2-0E3B-423B-B6FF-F76E2EB6D273} = {1F3797C7-C705-41ED-8732-D7B05D7E8030}
+		{C558B89E-329A-474B-A785-17419462363A} = {9E0F32B7-8C96-4BF6-9233-30F2BFBB5C38}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EA9944B-E42C-4B91-8DCC-C27BAD870525}
+	EndGlobalSection
+EndGlobal

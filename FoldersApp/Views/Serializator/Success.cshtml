@@ -1,0 +1,166 @@
+﻿@using FoldersApp.Persistance.Domains.Models;
+
+<p><h3>DigitalImgFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+        <th>Resource</th>
+        <th>Evidence</th>
+        <th>Graphic</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(DigitalImgFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+                <td>@item.ResourceFolderId</td>
+                <td>@item.EvidenceFolderId</td>
+                <td>@item.GraphicProductFolderId</td>
+            </tr>
+        }
+
+    }
+</table>
+
+<p><h3>EvidenceFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(EvidenceFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+            </tr>
+        }
+
+    }
+
+</table>
+
+<p><h3>FinalProductFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(FinalProductFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+            </tr>
+        }
+    }
+</table>
+
+<p><h3>GraphicProductFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+        <th>Process</th>
+        <th>Final</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(GraphicProductFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+                <td>@item.ProcessFolderId</td>
+                <td>@item.FinalProductFolderId</td>
+            </tr>
+        }
+
+    }
+
+</table>
+
+<p><h3>PrimarySourceFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(PrimarySourceFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+            </tr>
+        }
+    }
+</table>
+
+<p><h3>ProcessFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(ProcessFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+            </tr>
+        }
+    }
+</table>
+
+<p><h3>GraphicProductFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+        <th>Primary</th>
+        <th>Secondary</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(ResourceFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+                <td>@item.PrimarySourceId</td>
+                <td>@item.SecondarySourceId</td>
+            </tr>
+        }
+
+    }
+
+</table>
+
+<p><h3>SecondarySourceFolder</h3></p>
+<table cellpadding="2" cellspacing="2" , border="1">
+    <tr>
+        <th>Id</th>
+        <th>Current</th>
+    </tr>
+    @foreach (var item in ViewBag.Result)
+    {
+        @if (item.GetType().Equals(typeof(SecondarySourceFolder)))
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.CurrentFolderName</td>
+            </tr>
+        }
+    }
+</table>

@@ -1,0 +1,25 @@
+﻿@using (Html.BeginForm("Index", "Serializator", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h4>Import</h4>
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <td>XML File</td>
+                <td><input type="file" name="xmlFile"/></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Import" /></td>
+            </tr>
+        </table>
+}
+
+@using (Html.BeginForm("ExportFromDb", "Serializator", FormMethod.Post))
+{
+    <p><h4>Export</h4></p>
+    <p>
+        <form>
+            <input type="text" name="path" placeholder="Set a name for file" />
+            <input type="submit" value="Export" />
+        </form>
+    </p>
+}

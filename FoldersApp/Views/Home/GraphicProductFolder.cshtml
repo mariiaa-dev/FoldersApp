@@ -1,0 +1,11 @@
+﻿@using FoldersApp.Application.DTOs;
+@model GraphicProductFolderDTO
+
+<h4>"Folder" - @Model.CurrentFolderName</h4>
+
+<div>
+    <ul>
+        <li><a href="/Home/ProcessFolder">@Model.ProcessFolderName</a></li>
+        <li><a href="/Home/FinalProductFolder">@Model.FinalProductFolderName</a></li>
+    </ul>
+</div>

@@ -1,0 +1,11 @@
+﻿@using FoldersApp.Application.DTOs;
+@model ResourceFolderDTO
+
+<h4>"Folder" - @Model.CurrentFolderName</h4>
+
+<div>
+    <ul>
+        <li><a href="/Home/PrimarySourceFolder">@Model.PrimarySourceName</a></li>
+        <li><a href="/Home/SecondarySourceFolder">@Model.SecondarySourceName</a></li>
+    </ul>
+</div>
